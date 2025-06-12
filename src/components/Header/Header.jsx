@@ -5,7 +5,7 @@ export default function Header({ currentScore, roundScore }) {
   return (
     <header>
       <div>
-        <h1>Animal Memory Game</h1>
+        <h1>Pokemon Memory Game</h1>
         <ScoreBoard currentScore={currentScore} roundScore={roundScore} />
       </div>
       <p>
