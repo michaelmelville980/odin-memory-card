@@ -1,10 +1,11 @@
 import React from "react";
 import ScoreBoard from "./Scoreboard/Scoreboard.jsx";
+import styles from "./Header.module.css"
 
 export default function Header({ currentScore, roundScore }) {
   return (
-    <header>
-      <div>
+    <header className={styles.wholeHeader}>
+      <div className={styles.firstBlock}>
         <h1>Pokemon Memory Game</h1>
         <ScoreBoard currentScore={currentScore} roundScore={roundScore} />
       </div>

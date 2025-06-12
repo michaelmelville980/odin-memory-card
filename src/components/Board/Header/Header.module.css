@@ -1,0 +1,9 @@
+.firstBlock{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wholeHeader{
+    display: flex;
+    flex-direction: column;
+}
