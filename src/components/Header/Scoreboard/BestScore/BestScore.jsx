@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 export default function BestScore({ roundScore }) {
   const [bestScore, setBestScore] = useState(0);
 
-  /* Runs when roundScore or bestScore change */
+  /* Runs when roundScore changes */
   useEffect(() => {
     if (roundScore > bestScore) {
       setBestScore(roundScore);
@@ -11,5 +11,5 @@ export default function BestScore({ roundScore }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [roundScore]);
 
-  return (<p>Best Score: {bestScore}</p>);
+  return <p>Best Score: {bestScore}</p>;
 }
